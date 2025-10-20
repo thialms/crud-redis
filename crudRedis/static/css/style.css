@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: rgb(27, 214, 183); */
+
+}
+.AddLixeira{
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    font-size: 30px;
+    gap: 15px;
+}
+
+.AddLixeira a{
+    text-decoration: none;
+}
+
+.AddLixeira .add{
+    color: green;
+}
+
+.AddLixeira .remove{
+    color: red;
+}
+
+
+
+
+.cabecalho h1{
+    font-weight:800;
+}
+
+/* LIST */
+section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 30px;
+align-items: center;
+}
+
+
+.card {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(59, 59, 163);
+    border-radius: 15px;
+    width: 450px;
+    height: 200px;
+}
+.card1 , .card2 {
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+gap: 50px;
+}
+
+.formularioadd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formularioadd label{
+    
+}

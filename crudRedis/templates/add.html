@@ -1,0 +1,19 @@
+{% extends 'index.html'%}
+
+{% block content %}
+    <section>
+        <form action="" class="formularioadd">
+            <label for="titulo">Título</label>
+            <input type="text"
+            placeholder="Escreva o titulo da tarefa"
+            required>
+            <label for="descricao">Descrição</label>
+            <input type="textarea"
+            placeholder="Descreva a tarefa">
+            <label for="data">Data</label>
+            <input type="date"
+            required>
+        </form>
+        
+    </section>
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>To-Do List</h1>
+        <div class="AddLixeira">
+        <a href="" class="add"><p>+</p></a>
+         <a href="" class="remove"><p>-</p></a>
+        </div>
+        
+    </header>
+   
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
