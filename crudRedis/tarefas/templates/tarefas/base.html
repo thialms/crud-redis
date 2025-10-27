@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Tarefas - CRUD Redis{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body { background: #f6f8fb; }
+      .card-task { transition: box-shadow .15s ease; }
+      .card-task:hover { box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+      .badge-status { text-transform: capitalize; }
+    </style>
+    {% block extra_head %}{% endblock %}
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'listTarefas' %}">Tarefas</a>
+        <div class="ms-auto">
+          <a class="btn btn-outline-primary" href="{% url 'addTarefa' %}">+ Nova Tarefa</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      {% block content %}{% endblock %}
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    {% block extra_scripts %}{% endblock %}
+  </body>
+</html>
